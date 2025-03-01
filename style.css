@@ -1,21 +1,106 @@
-body{
-    height:100vh;
+
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-#wall{
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Main container */
+.container {
+    position: relative;
+    width: 90%;
+    max-width: 800px;
+}
+
+/* Wall section */
+#wall {
     display: flex;
     justify-content: center;
-    height: 80vh;
-    margin:0;
-};
-.lowerWall{
-    height:10vh;
-    background-color: red;
+    align-items: center;
+    height: 60vh;
+    background-color: #f5f5f5;
+    margin-bottom: 10px;
+    border-radius: 10px;
 }
-.container{
-    position:relative;
-};
-#indoorTub{
-    position: absolute;
-    top: 0;
 
+/* Color text */
+#colorName {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Positioning images properly */
+#indoorTub {
+    width: 40%;
+    position: absolute;
+    left: 5%;
+    top: 20%;
+}
+
+#sofa {
+    width: 50%;
+    position: absolute;
+    left: 30%;
+    top: 40%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #wall {
+        height: 50vh;
+    }
+
+    #colorName {
+        font-size: 1.2rem;
+    }
+
+    #indoorTub {
+        width: 50%;
+        left: 10%;
+        top: 25%;
+    }
+
+    #sofa {
+        width: 60%;
+        left: 20%;
+        top: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    #wall {
+        height: 40vh;
+    }
+
+    #colorName {
+        font-size: 1rem;
+    }
+
+    #indoorTub {
+        width: 60%;
+        left: 5%;
+        top: 60%;
+    }
+
+    #sofa {
+        width: 70%;
+        left: 15%;
+        top: 55%;
+    }
 }
