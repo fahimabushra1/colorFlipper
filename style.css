@@ -1,0 +1,21 @@
+body{
+    height:100vh;
+}
+#wall{
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+    margin:0;
+};
+.lowerWall{
+    height:10vh;
+    background-color: red;
+}
+.container{
+    position:relative;
+};
+#indoorTub{
+    position: absolute;
+    top: 0;
+
+}
